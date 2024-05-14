@@ -48,7 +48,7 @@ const Cadastro = () => {
 
     const handleSubmit = async () => {
         try {
-            const response = await axios.post("https://localhost:7019/api/Auth/cadastro", user)
+            const response = await axios.post("https://localhost:7019/api/Auth/cadastro", registerModel)
             localStorage.setItem('user', JSON.stringify(response.data))
 
         } catch (error) {

@@ -39,6 +39,7 @@ const Teste = () => {
           {teste.questoes.map((questao, index) => (
             <div key={questao.id} className="ml-7 mt-7">
               <h3>{index + 1}. {questao.enunciado}</h3>
+              <input type="text" className=" text-sky-600 cursor-pointer underline bg-white" value='Conferir resposta' disabled/>
               <ul>
                 {questao.alternativas.map((alternativa, idx) => {
                   const respostaUsuario = teste.respostaUsuarios.find(resposta => resposta.alternativaId === alternativa.id);

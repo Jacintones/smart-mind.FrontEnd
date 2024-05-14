@@ -65,7 +65,7 @@ const FazerTeste = () => {
     const notaFinal = (notaAluno / quantidadeQuestoes) * 10;
     
     try {
-      const response = await axios.post('https://localhost:7019/api/Teste', {
+      const response = await axios.post(`https://localhost:7019/api/Teste`, {
         nome: `Avaliação ${nome}`,
         dataDaRealizacao: new Date().toISOString(),
         pontuacao: 10,
